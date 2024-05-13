@@ -229,9 +229,9 @@ class Message(Generator):
         return self.wait_until_done()
 
     def __getitem__(self, key: str) -> str:
-        print("_getitem_")
+        #print("_getitem_")
         self.wait_until_done()
-        print("done")
+        #print("done")
         if key == "text":
             return self.text
         elif key == "web_search":
